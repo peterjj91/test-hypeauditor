@@ -1,0 +1,67 @@
+// В этом файле должны быть стили для БЭМ-блока topic, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.topic {
+
+  $block-name: &; // #{$block-name}__element {}
+  z-index: 1;
+  overflow: hidden;
+
+  &__nav {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    &__content {
+      & > * {
+        margin-bottom: 9px;
+      }
+    }
+
+    &__side {
+      margin-top: 11px;
+    }
+
+    .btn {
+      display: inline-block;
+      vertical-align: top;
+      min-width: 180px;
+      font-size: 15px;
+      line-height: 15px;
+      text-align: center;
+    }
+  }
+
+  &__slider {
+    padding-bottom: 125px;
+    margin-bottom: -46px;
+    position: relative;
+
+    &__wrapper {
+      // margin-right: -280px;
+    }
+
+    &:before, &:after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 16px;
+      height: 340px;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    &:before {
+      left: -100%;
+      right: 80%;
+      background: linear-gradient(90deg, #EFF3F6 0%, rgba(237, 242, 245, 0) 100%);
+    }
+
+    &:after {
+      right: -100%;
+      left: 80%;
+      background: linear-gradient(270deg, #EFF3F6 0%, rgba(237, 242, 245, 0) 100%);
+    }
+  }
+}

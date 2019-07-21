@@ -1,0 +1,52 @@
+// В этом файле должны быть стили для БЭМ-блока target-promo, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.target-promo {
+  $block-name: &; // #{$block-name}__element {}
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font-family: $proximaNova-bold;
+
+  &__wrapper {
+    position: relative;
+    padding-bottom: 156px;
+    margin-bottom: -117px;
+    
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-image: url(../img/background-ocean.svg);
+      background-size: cover;
+      height: 405px;
+      z-index: -1;
+      pointer-events: none;
+    }
+  }
+  
+  &__content {
+    padding-right: 32px;
+  }
+
+  &__img {
+
+  }
+
+  &__subscribe {
+    margin-top: 32px;
+  }
+
+  .h1 {
+    margin-bottom: 25px;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 26px;
+    color: #86939E;
+  }
+}

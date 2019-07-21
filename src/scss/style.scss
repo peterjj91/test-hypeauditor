@@ -5,12 +5,23 @@
  */
 
 @import './src/scss/variables.scss';
+@import './node_modules/tiny-slider/src/tiny-slider.scss';
 @import './src/blocks/typo/typo.scss';
 @import './src/blocks/sprite-png/sprite-png.scss';
 @import './src/blocks/sprite-svg/sprite-svg.scss';
 @import './src/blocks/page/page.scss';
 @import './src/blocks/page-header/page-header.scss';
 @import './src/blocks/page-footer/page-footer.scss';
-@import './src/blocks/item/item.scss';
-@import './src/blocks/word-line/word-line.scss';
-@import './src/blocks/chat/chat.scss';
+@import './src/blocks/circle-main/circle-main.scss';
+@import './src/blocks/dropdown/dropdown.scss';
+@import './src/blocks/badge/badge.scss';
+@import './src/blocks/input/input.scss';
+@import './src/blocks/btn/btn.scss';
+@import './src/blocks/search/search.scss';
+@import './src/blocks/card/card.scss';
+@import './src/blocks/slider/slider.scss';
+@import './src/blocks/target-promo/target-promo.scss';
+@import './src/blocks/subscribe/subscribe.scss';
+@import './src/blocks/question-promo/question-promo.scss';
+@import './src/blocks/topic/topic.scss';
+@import './src/blocks/boost/boost.scss';

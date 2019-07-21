@@ -1,3 +1,20 @@
+
+.h1, h1 {
+  font-family: $proximaNova-bold;
+  font-size: 30px;
+  line-height: 37px;
+}
+
+.h2, h2 {
+  font-family: $proximaNova-bold;
+  font-size: 23px;
+  line-height: 28px;
+}
+
 p {
   margin: 0;
+}
+
+strong {
+  font-family: $proximaNova-bold;
 }

@@ -1,0 +1,25 @@
+// В этом файле должны быть стили для БЭМ-блока badge, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.badge {
+
+  $block-name: &; // #{$block-name}__element {}
+  display: inline-block;
+  background: rgba(134, 147, 158, 0.14);
+  border-radius: 6px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FF6436;
+  padding: 2px 9px 2px 8px;
+
+  &__block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & > * {
+      margin-right: 5px;
+    }
+  }
+}

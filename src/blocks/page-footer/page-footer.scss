@@ -1,11 +1,10 @@
 
 .page-footer {
-
   $block-name: &; // #{$block-name}__element {}
-  background-color: #C4C4C4;
-  height: 90px;
-  font-size: 24px;
-  line-height: 20px;
+  background-color: #EFF3F6;
+  // height: 90px;
+  // font-size: 24px;
+  // line-height: 20px;
 
   &__inner {
     position: relative;
@@ -13,5 +12,59 @@
     height: 100%;
     justify-content: center;
     align-items: center;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+    height: 161px;
+    padding-bottom: 48px;
+  }
+
+  &__logo {
+    position: absolute;
+    transform: translate(-50%, 0%);
+    bottom: 49px;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+    &__img {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__info {
+
+    &--left {
+      
+    }
+    &--right {
+      
+    }
+  }
+
+  &__contacts {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #86939E;
+
+    &__icons {
+      margin-right: 19px;
+    }
+  }
+
+  &__copyright {
+    font-family: $proximaNova-bold;
+    font-size: 9px;
+    line-height: 11px;
+    letter-spacing: 6px;
+    color: #86939E;
+    margin-bottom: 2px;
   }
 }

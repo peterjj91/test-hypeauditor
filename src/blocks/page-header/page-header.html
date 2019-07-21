@@ -1,7 +1,44 @@
 <header class="page-header" role="banner">
   <div class="page-header__inner">
 
-    header
+    <a href="/" class="page-header__logo">
+      <svg>
+        <use xlink:href="img/sprite-svg.svg#logo"></use>
+      </svg>
+    </a>
+
+    <div class="page-header__search">
+      <div class="search">
+        <input type="text" class="search__input input" placeholder="Enter Instagram username">
+      </div>
+    </div>
+
+    <div class="page-header__info">
+      <ul class="page-header__nav">
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Discovery</a></li>
+        <li><a href="#">Reports</a></li>
+      </ul>
+
+      <div class="page-header__profile">
+        <div class="dropdown dropdown--right">
+          <a class="dropdown-toggle">
+            Alexander 
+            <span class="badge">
+              <span class="badge__block">
+                <svg width="10px" height="13px"><use xlink:href="img/sprite-svg.svg#fire"></use></svg> 
+                998
+              </span>
+            </span>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#">Profile</a>
+            <a href="#">Settings</a>
+            <a href="#">Exit</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
   </div>
 </header>
