@@ -541,6 +541,8 @@ template {
     width: calc(100% / 70);
     height: 10px;
     float: left; }
+:focus {
+  outline: none !important; }
 .h1, h1 {
   font-family: "ProximaNova-Bold";
   font-size: 30px;
@@ -1108,7 +1110,8 @@ button {
     -webkit-box-shadow: 0px 14px 14px rgba(0, 0, 0, 0.1);
             box-shadow: 0px 14px 14px rgba(0, 0, 0, 0.1);
     opacity: 1;
-    overflow: hidden; }
+    overflow: hidden;
+    outline: none !important; }
 .tns-outer .tns-controls button:after {
       content: "";
       position: absolute;
