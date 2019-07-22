@@ -874,8 +874,6 @@ a {
 .dropdown {
   position: relative;
   display: inline-block; }
-.dropdown.open .dropdown-menu {
-    display: block; }
 .dropdown-toggle {
     outline: none;
     background: 0;
@@ -913,6 +911,8 @@ a {
         text-decoration: none;
         background: #009fff;
         color: white; }
+.dropdown-menu.open {
+      display: block; }
 .dropdown--right .dropdown-menu {
     left: auto;
     right: 0; }

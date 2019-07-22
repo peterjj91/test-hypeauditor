@@ -4,13 +4,13 @@
   position: relative;
   display: inline-block;
 
-  &.open {
-    #{$block-name} {
-      &-menu {
-        display: block;
-      }
-    }
-  }
+  // &.open {
+  //   #{$block-name} {
+  //     &-menu {
+  //       display: block;
+  //     }
+  //   }
+  // }
 
   &-toggle {
     outline: none;
@@ -58,6 +58,10 @@
         background: #009fff;
         color: white;
       }
+    }
+
+    &.open {
+      display: block;
     }
   }
 
