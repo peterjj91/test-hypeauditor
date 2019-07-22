@@ -645,9 +645,8 @@ a {
     -ms-flex-item-align: baseline;
         align-self: baseline;
     margin-top: 5px; }
-.page-header__logo svg {
-      width: 135.49px;
-      height: 29.8px; }
+.page-header__logo img {
+      width: 135.49px; }
 .page-header__search {
     -webkit-box-flex: 1;
         -ms-flex: 1;
@@ -1137,6 +1136,9 @@ button {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-family: "ProximaNova-Bold"; }
 .target-promo__wrapper {
     position: relative;
@@ -1154,7 +1156,14 @@ button {
       z-index: -1;
       pointer-events: none; }
 .target-promo__content {
-    padding-right: 32px; }
+    padding-right: 32px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1; }
+.target-promo__img {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 467px;
+            flex: 0 0 467px; }
 .target-promo__subscribe {
     margin-top: 32px; }
 .target-promo .h1 {
@@ -1189,6 +1198,14 @@ button {
     font-size: 18px;
     line-height: 22px;
     color: #BBCBD8; }
+.subscribe__input::-webkit-input-placeholder {
+      color: #BBCBD8; }
+.subscribe__input::-moz-placeholder {
+      color: #BBCBD8; }
+.subscribe__input:-ms-input-placeholder {
+      color: #BBCBD8; }
+.subscribe__input:-moz-placeholder {
+      color: #BBCBD8; }
 .subscribe__btn {
     position: absolute;
     top: 5px;

@@ -7,6 +7,7 @@
   display: flex;
   align-items: center;
   width: 100%;
+  justify-content: space-between;
   font-family: $proximaNova-bold;
 
   &__wrapper {
@@ -30,10 +31,11 @@
   
   &__content {
     padding-right: 32px;
+    flex: 1;
   }
 
   &__img {
-
+    flex: 0 0 467px;
   }
 
   &__subscribe {

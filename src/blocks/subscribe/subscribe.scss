@@ -31,6 +31,19 @@
     font-size: 18px;
     line-height: 22px;
     color: #BBCBD8;
+
+    &::-webkit-input-placeholder {
+      color: #BBCBD8;
+    }
+    &::-moz-placeholder {
+      color: #BBCBD8;
+    }
+    &:-ms-input-placeholder {
+      color: #BBCBD8;
+    }
+    &:-moz-placeholder {
+      color: #BBCBD8;
+    }
   }
 
   &__btn {
